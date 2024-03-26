@@ -1,4 +1,4 @@
-name: Build Program on Ubuntu 14.04
+name: Build Program on Ubuntu
 
 on:
   push:
@@ -21,8 +21,6 @@ jobs:
     - name: Build
       run: |
         cd ./js/src/
-        autoconf-2.13
         cd build-linux
-        ../configure --enable-debug --disable-optimize
         chmod +x build.sh
         sh build.sh
