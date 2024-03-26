@@ -20,5 +20,6 @@ jobs:
 
     - name: Build
       run: |
-        chmod +x ./js/src/build-win32
-        sh ./build.sh
+        cd ./js/src/build-win32
+        chmod +x build.sh
+        sh build.sh
